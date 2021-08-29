@@ -1,0 +1,75 @@
+.title {
+  color: var(--mainWhite);
+  width: 80%;
+}
+
+.subtitle {
+  color: var(--mainWhite);
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
+  padding-left: 5px;
+}
+
+.subtitleLink {
+  color: var(--mainWhite);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.offerWrapper {
+  margin-bottom: 6em;
+}
+
+.offerCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 1.2em 0;
+}
+
+.offerCard {
+  min-width: 150px;
+  background-color: var(--mainWhite);
+  padding: 1.2em;
+  border-radius: 25px;
+  margin-right: 1.6em;
+}
+
+.offerCard__toptext {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85rem;
+  color: var(--darkerGrey);
+  letter-spacing: 1px;
+  margin-bottom: 1.6em;
+}
+
+.offerCard__maintext {
+  font-size: 3em;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.offerCard__bottomtext {
+  background-color: var(--lightPrimary);
+  color: var(--mainWhite);
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .offerCard {
+    min-width: 200px;
+  }
+  .offerCard__maintext {
+    font-size: 5em;
+  }
+}
+
+@media (min-width: 920px) {
+  .offerWrapper {
+    margin-bottom: 0;
+  }
+}

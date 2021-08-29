@@ -1,0 +1,28 @@
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  align-items: center;
+}
+
+.description {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.description ul {
+  margin-left: 18px;
+}
+
+.sub-description {
+  margin-top: 20px;
+}
+
+.back {
+  text-decoration: none;
+  color: rgb(22, 82, 240);
+  border-radius: 4px;
+  padding: 12px 16px;
+  font-weight: 500;
+}

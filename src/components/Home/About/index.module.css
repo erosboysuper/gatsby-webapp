@@ -1,0 +1,56 @@
+.about {
+  padding: 4rem 0;
+}
+.about-center {
+  width: 80vw;
+  margin: 0 auto;
+}
+.aboutLeftContent {
+  margin-top: 3rem;
+}
+.aboutLeftContent h2 {
+  font-size: 2rem;
+}
+
+.aboutRightContent {
+  position: relative;
+  text-align: center;
+}
+
+.btnRight, .btnLeft {
+  margin-top: 1.6rem;
+  min-width: 200px;
+}
+
+.btnRight {
+  margin-left: 0;
+}
+
+.aboutRightContent h4 {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .about-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .btnRight {
+    margin-top: 0;
+    margin-left: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-center {
+    width: 95vw;
+    max-width: 1170px;
+  }
+}

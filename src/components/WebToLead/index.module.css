@@ -1,0 +1,104 @@
+.formWrapper {
+  background-color: var(--mainWhite);
+  border-radius: 25px;
+  padding: 2em 1.4em;
+}
+
+.formHeading {
+  margin-bottom: 2em;
+}
+
+.form {
+  margin-bottom: 2em;
+}
+
+.nameField {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.formFooter {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+.inputLabel {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--mainBlack);
+}
+
+.formControl {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1.4rem;
+  padding: 1rem;
+  border: 1px solid var(--darkGrey);
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: var(--mainBlack);
+  font-size: 0.85rem;
+  line-height: 1.15;
+}
+
+.textarea {
+  height: 150px;
+}
+
+.formControl:focus,
+.textarea:focus {
+  border-color: var(--primaryColor);
+  box-shadow: none;
+  outline: 0;
+}
+
+.formControl:hover,
+.textarea:hover {
+  border-color: var(--mainBlack);
+}
+
+.required .inputLabel:after {
+  content: " *";
+  color: var(--mainRed);
+}
+
+.formFooterText {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: var(--grey);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.formFooterLink {
+  margin: 0 5px;
+  color: var(--mainRed);
+}
+
+.recaptcha {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .formWrapper {
+    padding: 4em 3em 3em 3em;
+  }
+}
+
+@media (min-width: 1240px) {
+    .formFooter {
+      grid-template-columns: 1fr 2fr;
+    }
+  
+    .formFooterText {
+      justify-content: flex-end;
+      margin-top: 0;
+    }
+  }

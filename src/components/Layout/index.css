@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
+
+:root {
+  --primaryColor: #1551f0;
+  --lightPrimary: #5c88fa;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #050f19;
+  --mainGrey: #ececec;
+  --darkGrey: #cfcfcf;
+  --darkerGrey: #a9a9a9;
+  --grey: grey;
+  --mainRed: #FF4040;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 4px;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.25rem;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.defaultHero {
+  min-height: calc(100vh - 62px);
+  background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../images/defaultBcg.jpeg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container {
+  display: block;
+  position: relative;
+}
+
+.btn-container--center {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.btn-white:disabled,
+.btn-primary:disabled,
+.btn-primary--red:disabled,
+.btn-white:disabled,
+.btn-secondary:disabled,
+.btn-white:disabled:hover,
+.btn-primary:disabled:hover,
+.btn-primary--red:disabled:hover,
+.btn-white:disabled:hover,
+.btn-secondary:disabled:hover {
+  color: var(--darkGrey);
+  border: 2px solid var(--darkGrey);
+  background-color: var(--mainWhite);
+
+}
+
+.btn-white,
+.btn-primary,
+.btn-primary--red {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  border: 2px solid var(--mainWhite);
+  padding: 0.9rem 1.6rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  border-radius: 27px;
+  color: var(--mainWhite);
+}
+
+.btn-white--small,
+.btn-primary--small,
+.btn-primary--red--small {
+  text-decoration: none;
+  border: 2px solid var(--mainWhite);
+  padding: 0.5rem 0.8rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  border-radius: 27px;
+  color: var(--mainWhite);
+}
+
+.btn-primary,
+.btn-primary--small {
+  background-color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+}
+
+.btn-primary--red,
+.btn-primary--red--small {
+  background-color: var(--mainRed);
+  color: var(--mainWhite);
+  border: 2px solid var(--mainRed);
+}
+
+.btn-white:hover,
+.btn-white:focus,
+.btn-white--small:hover,
+.btn-white--small:focus {
+  outline: none;
+  background-color: var(--mainWhite);
+  color: var(--primaryColor);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary--small:hover,
+.btn-primary--small:focus {
+  outline: none;
+  background: transparent;
+  color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+}
+
+.btn-primary--red:hover,
+.btn-primary--red:focus,
+.btn-primary--red--small:hover,
+.btn-primary--red--small:focus {
+  outline: none;
+  background: transparent;
+  color: var(--mainRed);
+  border: 2px solid var(--mainRed);
+}
+
+.btn-secondary {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--mainWhite);
+  border: 2px solid var(--primaryColor);
+  padding: 0.9rem 1.6rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  border-radius: 27px;
+  background-color: var(--primaryColor);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-layout {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0px auto;
+  padding: 24px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+/* Carousel component additional override styling */
+.rec-slider-container {
+  overflow: initial !important;
+}
+
+.rec-slider>div {
+  outline: none;
+}
